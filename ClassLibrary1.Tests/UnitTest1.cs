@@ -12,7 +12,7 @@ public class UnitTest1
     public void AddTwoNumbers_ReturnSum()
     {
         var calc = new ClassLibrary1.Class1();
-        Assert.Equal(4, calc.Add(2, 3));
+        Assert.Equal(5, calc.Add(2, 3));
     }
 
     [Fact]
