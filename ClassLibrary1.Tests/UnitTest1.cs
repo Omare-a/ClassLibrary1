@@ -1,4 +1,5 @@
-﻿namespace ClassLibrary1.Tests;
+﻿using Xunit;
+namespace ClassLibrary1.Tests;
 
 /// <summary>
 /// dessa tester kontrollerar att calculator klassen fungerar.
@@ -9,6 +10,8 @@
 public class UnitTest1
 {
     private readonly ClassLibrary1.Class1 _calc;
+
+    public UnitTest1() => _calc = new ClassLibrary1.Class1();
 
     [Fact]
     public void AddTwoNumbers_ReturnSum()
