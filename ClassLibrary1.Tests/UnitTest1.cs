@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using System;
+using Xunit;
 namespace ClassLibrary1.Tests;
 
 /// <summary>
@@ -10,7 +11,7 @@ namespace ClassLibrary1.Tests;
 public class UnitTest1
 {
     private readonly ClassLibrary1.Class1 _calc;
-
+    //kör konstruktorn innan varje test
     public UnitTest1() => _calc = new ClassLibrary1.Class1();
 
     [Fact]
